@@ -2,9 +2,10 @@
 
 expr="^[A-Z][a-z]{3,}$"
 read -p "Enter your First Name: " name
-if [[ $name =~ $expr ]]
+read -p "Enter the Last Name: " lastName
+if [[ $name =~ $expr && $lastName =~ $expr ]]
 then
-	echo "accepted"
+	echo "both accepted"
 else
-	echo "Rejected"
+	echo "both Rejected"
 fi
