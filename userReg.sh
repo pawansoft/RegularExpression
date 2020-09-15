@@ -5,7 +5,7 @@
 expr="^[A-Z][a-z]{3,}$"
 emailExpr="^[a-zA-Z0-9+_.-]+@[a-zA-Z.-]{1,3}+$"
 mobExpr="^[0-9]{2,2}[ ][0-9]{10,10}"
-passExp="^[A-Za-z0-9]{8,}$"
+passExp="^[a-zA-Z0-9]*[A-Z]+[a-zA-Z0-9]{8,}$"
 
 
 #Taking input from user------------------------------------------------
@@ -40,7 +40,7 @@ else
 fi
 
 #Checking provide Password  validation-------------------------------------------------
-if [[ $pass =~ $passExpr ]]
+if [[ $pass =~ $passExp ]]
 then
         echo "Valid Password"
 else
