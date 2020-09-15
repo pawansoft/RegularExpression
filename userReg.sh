@@ -3,7 +3,7 @@
 
 #storing Regular expression into variable
 expr="^[A-Z][a-z]{3,}$"
-emailExpr="^[a-zA-Z0-9+_.-]+@[a-zA-Z.-]{1,3}+$"
+emailExpr="^([A-Za-z]+[A-^([a-zA-Z0-9_]+)@([a-zA-Z0-9]+)\.([a-zA-Z]{2,5})$"
 mobExpr="^[0-9]{2,2}[ ][0-9]{10,10}"
 passExp="^[a-zA-Z0-9](?=.*[0-9])(?=.*[A-Z])(?=.*[*.!@$%^&(){}[]:;<>,.?/~_+-=|\]).{8,}$"
 
